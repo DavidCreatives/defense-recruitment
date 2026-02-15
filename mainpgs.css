@@ -44,29 +44,45 @@ body{
 }
 
 /*  */
+
 .Introduction{
   background-image: url('https://crimesipoa.org/wp-content/uploads/2022/02/Image-1900x1069.jpg');
   background-size: cover;
   background-position: center;
-  height: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .Introduction p{
   color: white;
+  background-color: rgba(65, 65, 63, 0.4);
   font-size: 24px;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  padding: 20px; 
+  padding: 20px;
+  border-radius: 105px;
 }
+
 /* About Section */
 .About{
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-lZkG-wVTwr5ZQtKStoq60gE4DGP9KB8oQ&s);
   background-size: cover;
   padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .About p{
-  color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgba(62, 62, 63, 0.4);
+  border-radius: 105px;
+  padding: 20px;
   font-size: 24px;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
