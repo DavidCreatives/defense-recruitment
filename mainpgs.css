@@ -49,7 +49,7 @@ body{
   padding-right: 25%;
 }
 
-/*  */
+/*Introduction*/
 
 .Introduction{
   background-image: url('https://crimesipoa.org/wp-content/uploads/2022/02/Image-1900x1069.jpg');
@@ -148,9 +148,10 @@ body{
   margin-bottom: 10px;
   height: 70%;
   width: 250px;
-  transition: all 1s ease;
+  
   overflow: hidden;
   border-block-start: 10px solid gold;
+  transition: all 1s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -185,6 +186,9 @@ body{
   font-family: 'Times New Roman', Times, serif;
   height: 100px;
 }
+
+/* Registration Page */
+
 
 @media screen and (max-width: 768px) {
   .item{
