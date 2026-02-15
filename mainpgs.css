@@ -188,7 +188,70 @@ body{
 }
 
 /* Registration Page */
+.MainBody{
+  background-image: url(https://media.istockphoto.com/id/1334705669/vector/kenya-african-country-flag.jpg?s=612x612&w=0&k=20&c=WhqoKoGjkWlkYVuPRIxjieRE9jQvljyEjiNuh1PhE_w=);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 200px 200px 100px rgba(0, 0, 0, .8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RegistrationSection{
+  background-color: white;
+  height: fit-content;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
+}
 
+.RegistrationForm input, textarea{
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.RegistrationForm button{
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  cursor: pointer; 
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.RegistrationForm button:hover{
+  background-color: lightgoldenrodyellow;
+  transform: scale(1.1);
+}
+
+.PreReg{
+  background-color: rgba(255, 255, 255, 0.879);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  height: 60%;
+  width: 250px;
+  
+  overflow: hidden;
+  border-block-start: 10px solid gold;
+  transition: all 1s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
+}
 
 @media screen and (max-width: 768px) {
   .item{
