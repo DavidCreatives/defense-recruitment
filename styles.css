@@ -161,6 +161,18 @@ a:hover{
     margin: 50px;
     display: block;
   }
+
+  .SignUpContainer{
+    flex-direction: row;
+    width: 100%;
+    max-height: fit-content;
+    margin: 50px;
+    display: block;
+  }
   
+  .SignUpForm{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }  
 
