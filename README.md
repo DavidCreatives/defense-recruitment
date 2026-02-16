@@ -16,3 +16,8 @@ A website for aspiring men and women of service to the Republic of Kenya under a
     **Date && time:** 3.46PM 16/02/2026
     **Status:** ✅Passed
     **Code changes:** Creation of `handleSignUp()` function.
+
+4. ### Test 4: Validate the username to accept only characters 3-18 and to cancel out redundancy  
+    **Date && time:** 7.37PM 16/02/2026
+    **Status:** ✅Passed
+    **Code changes:** Adding 
