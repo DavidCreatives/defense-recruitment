@@ -1,10 +1,10 @@
-// Create User constructor:
+// Create user database constructor:
 class userDatabase{
   constructor(){
     this.users = {};
   };
 };
-
+// Create individual user constructor
 class userConstructor{
   constructor(username, password){
     this.username = username;
@@ -26,6 +26,7 @@ if(nameInput){ //Only run if on signup page
   nameInput.addEventListener("input", function(){
     const nameVal = nameInput.value;
 
+    // Constantly display the validity of username input as the user is entering data into the username input
     if(nameVal.length < 3 || nameVal.length > 18){
       availableMessage.innerHTML = `<p style="color: red; font-size: 18px;text-align: left; margin:0px">⭕ Username character length should be 3 to 18 characters</p>`
       return;
@@ -50,10 +51,12 @@ function handleSignUp(){
   const passwordValue = passwordInput.value;
   const passwordConfirmValue = passwordConfirmInput.value;
 
+  // Validate the character length of the username and notify the user of this constraint
   if(nameVal.length < 3 || nameVal.length > 18){
     alert('Username character length should be 3 to 18 characters')
     return;
   }
+  // Notify and limit the user of only available usernames
   if(nameVal){
     const nameCheck = localStorage.getItem(nameVal)
     if(nameCheck){
@@ -70,6 +73,7 @@ function handleSignUp(){
       }
     }
   }
+  // Reset the data entry fields
   nameInput.value = ''
   passwordInput.value = ''
   passwordConfirmInput.value = ''
@@ -84,7 +88,7 @@ function handleLogin(){
 
   const localPassReq = localStorage.getItem(usernameLoginVal)
   if(passwordLoginVal === localPassReq){
-    // Store the username to display on other pages
+    // Store the username of the current logged in user to display on other pages
     localStorage.setItem('currentUser', usernameLoginVal)
     // console.log('Successful')
     // console.log(localPassReq)
@@ -94,7 +98,9 @@ function handleLogin(){
   }
 }
 
+// To specify the documents in which the user logged in status will be visible
 const allowedDoc = ["about.html", "services.html","register.html"]
+// To constantly display the username of the user logged in and fetch that data from the local storage
 if(allowedDoc.some(page => window.location.pathname.includes(page))){
   document.addEventListener("DOMContentLoaded", function(){
     const loggedInUser = localStorage.getItem('currentUser')
@@ -104,7 +110,7 @@ if(allowedDoc.some(page => window.location.pathname.includes(page))){
   })
 }
 
-
+// Handle registration of aspiring applicants
 function handleRegister(){
   const fullname = document.getElementById('fullname').value
   const email = document.getElementById('email').value
@@ -120,6 +126,7 @@ function handleRegister(){
   
   alert("Application successful✅")
 
+  // Reset the inputs of the registration form
   document.querySelector('.RegistrationForm').reset()
 }
 
